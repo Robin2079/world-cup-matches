@@ -326,7 +326,8 @@ body {
 
 .match-card {
   text-align: center;
-  padding: 20px 0;
+  padding-top: 40px;
+  padding-bottom: 20px;
   border: 1px solid #bebebe;
   border-radius: 15px;
   transition: all 0.2s ease;
