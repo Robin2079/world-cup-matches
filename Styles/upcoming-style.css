@@ -1,0 +1,543 @@
+body {
+  padding: 0;
+  margin: 0;
+  font-family: 'Poppins', sans-serif;
+}
+
+@media only screen and (max-width: 688px) {
+  body {
+    overflow-x: hidden;
+  } 
+}
+
+/******************* Section One Start From Here *******************/
+.sec-one {
+  height: auto;
+  padding: 80px 0;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.sec1-container {
+  background-color: #161616;
+  border-radius: 30px;
+  width: 70%;
+  display: flex;
+  padding: 0 100px 0 150px;
+}
+
+.sec1-col1 {
+  width: 47%;
+  margin: auto;
+}
+
+.hero-heading {
+  font-family: 'Poppins', sans-serif;
+  font-size: 70px;
+  color: #ffffff;
+  text-overflow: ellipsis;
+  margin: 0;
+  line-height: 80px;
+}
+
+.hero-texts {
+  font-family: 'Poppins', sans-serif;
+  font-weight: 400;
+  color: #ffffff;
+  font-size: 16px;
+  line-height: 26px;
+  margin-bottom: 50px;
+}
+
+.sec1-col1 a {
+  background-color: #DD0000;
+  padding: 16px 25px;
+  border-radius: 5px;
+  text-decoration: none;
+  font-family: 'Poppins', sans-serif;
+  font-weight: 400;
+  font-size: 20px;
+  color: #ffffff;
+  transition: all 0.4s ease-in;
+}
+
+.sec1-col1 a:hover {
+  background-color: #DD0000;
+  padding-right: 30px;
+}
+
+.sec1-col1 a i {
+  transition: all 0.4s ease-in;
+}
+
+.sec1-col1 a:hover i {
+  margin-left: 20px;
+}
+
+
+.sec1-col2 {
+  width: 53%;
+  display: flex;
+  justify-content: flex-end;
+  margin-top: 50px;
+  overflow: hidden;
+}
+
+.sec1-col2 img {
+  width: 581px;
+  height: 613px;
+  animation-iteration-count: infinite;
+  animation-timing-function: cubic-bezier(.54,.085,.5,.92);
+  animation-name: floating;
+  animation-duration: 4.5s;
+}
+
+@keyframes floating {
+0% {
+  transform: rotateX( 0deg ) translateY(0px);
+}
+
+50% {
+  transform: rotateX( 0deg ) translateY(20px);
+}
+100% {
+  transform: rotateX( 0deg ) translateY(0px);
+}
+}
+
+
+/***** First Section Responsive Start *****/
+/* For Mobile */
+@media only screen and (max-width: 688px) {
+  .sec-one {
+    padding: 30px 0;
+  }
+
+  .sec1-container {
+    width: 90%;
+    flex-direction: column;
+    padding: 30px 30px 0 30px;
+    margin: 20px;
+  }
+
+  .sec1-col1 {
+    width: 100%;
+    padding: 0;
+    margin: 0;
+  }
+
+  .sec1-col1 a {
+    margin: 0 10%;
+  }
+
+  .hero-heading, .hero-texts {
+    text-align: center;
+  }
+
+  .hero-btn {
+    display: block;
+    text-align: center;
+    margin: 0 120px;
+  }
+
+  .sec1-col2 {
+    width: 100%;
+    justify-content: center;
+    padding: 0;
+  
+  }
+
+  .sec1-col2 img {
+    height: 340px;
+    width: 323px;
+  }
+}
+
+/* For Tablet */
+@media only screen and (min-width: 689px) and (max-width: 992px) {
+  .sec-one {
+    padding: 40px 0;
+  }
+
+  .sec1-container {
+    width: 80%;
+    padding: 40px 60px 0 70px;
+  }
+
+  .sec1-col1 {
+    padding-bottom: 50px;
+  }
+
+  .hero-heading {
+    font-size: 30px;
+    line-height: 40px;
+  }
+
+  .hero-texts {
+    font-size: 13px;
+  }
+  
+  .sec1-col1 a {
+    padding: 10px 30px;
+    font-size: 16px;
+  }
+
+  .sec1-col2 {
+    justify-content: flex-end;
+    align-items: flex-end;
+    padding-left: 100px;
+  }
+
+  .sec1-col2 img {
+    width: 100%;
+    height: 100%;  
+  }
+}
+
+/* For Laptop */
+@media only screen and (min-width: 993px) and (max-width: 1312px) {
+  .sec1-container {
+    width: 80%;
+    padding: 50px 60px 0 70px;
+  }
+
+  .sec1-col1 {
+    padding-bottom: 80px;
+  }
+
+  .hero-heading {
+    font-size: 55px;
+    line-height: 50px;
+  }
+  
+  .hero-btn {
+    padding: 10px 20px;
+    font-size: 18px;
+  }
+
+  .sec1-col2 {
+    justify-content: center;
+    align-items: flex-end;
+  }
+
+  .sec1-col2 img {
+    width: 360px;
+    height: 379px;  
+  }
+}
+/* For Desktop and Others */
+@media screen and (min-width: 1313px) and (max-width:1600px) {
+  .sec1-container {
+    width: 80%;
+    padding: 50px 60px 0 70px;
+  }
+
+  .sec1-col1 {
+    padding-bottom: 60px;
+  }
+
+  .sec1-col2 {
+    justify-content: right;
+    align-items: flex-end;
+  }
+
+  .sec1-col2 img {
+    width: 360px;
+    height: 379px;  
+  }
+}
+/***** First Section Responsive End *****/
+/******************* Section One End Here *******************/
+
+
+
+/**************** Section Two Start From Here ****************/
+.sec-two {
+  height: auto;
+  padding: 80px 0;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.sec2-container {
+  width: 83%;
+  display: flex;
+  column-gap: 30px;
+}
+
+.sec2-col1 {
+  width: 380px;
+  height: 240px;
+  background-color: #161616;
+  border-radius: 15px;
+  padding: 30px;
+  display: grid;
+  grid-template-columns: repeat(1, 1fr);
+  row-gap: 30px;
+}
+
+.sec2-inactive-btn {
+  display: block;
+  text-decoration: none;
+  font-family: 'Poppins', sans-serif;
+  font-size: 20px;
+  line-height: 30px;
+  color: #161616;
+  background-color: #ffffff;
+  border-radius: 10px;
+  padding: 15px;
+  text-align: center;
+  transition: all 0.2s ease;
+}
+
+.sec2-inactive-btn:hover {
+  color: #ffffff;
+  background-color: #DD0000;
+}
+
+.sec2-active-btn {
+  display: block;
+  text-decoration: none;
+  font-family: 'Poppins', sans-serif;
+  font-size: 20px;
+  line-height: 30px;
+  color: #ffffff;
+  background-color: #DD0000;
+  border-radius: 10px;
+  padding: 15px;
+  text-align: center;
+}
+
+.sec2-col2 {
+  width: 100%;
+}
+
+.matches {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: repeat(1, 1fr);
+  grid-gap: 25px;
+  margin: 0 10px;
+}
+
+.match-card {
+  text-align: center;
+  padding: 20px 0;
+  border: 1px solid #bebebe;
+  border-radius: 15px;
+  transition: all 0.2s ease;
+  cursor: pointer;
+}
+
+.match-card:hover {
+  transform: scale(0.97);
+}
+
+
+.flag-row {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  column-gap: 10px;
+}
+
+.flag-row img {
+  width: 20%;
+}
+
+/*********** Second Section Responsive Start ***********/
+/* For Mobile */
+@media only screen and (max-width: 688px) {
+  .sec-two {
+    padding-top: 0;
+    padding-bottom: 30px;
+    margin: 0;
+  }
+
+  .sec2-container {
+    width: 100%;
+    flex-direction: column;
+    align-items: center;
+    column-gap: 0;
+    row-gap: 20px;
+  }
+
+  .sec2-col1 {
+    width: 100%;
+    background: none;
+
+  }
+
+  .sec2-inactive-btn {
+    border: 1px solid #bebebe;
+  }
+  
+  .sec2-col2-btn {
+    visibility: hidden;
+  }
+
+  .sec2-col2 {
+    width: 100%;
+  }
+
+  .matches {
+    grid-template-columns: repeat(1, 1fr);
+  }
+}
+
+/* For Tablet */
+@media only screen and (min-width: 689px) and (max-width: 992px) {
+  .sec-two {
+    justify-content: center;
+    padding-top: 0;
+    padding-bottom: 30px;
+    margin: 0;
+  }
+  .sec2-container {
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    padding: 0;
+    column-gap: 0;
+    row-gap: 20px;
+  }
+
+  .sec2-col1 {
+    width: 92%;
+    height: auto;
+    margin: 0 20px;
+    background: none;
+    display: flex;
+    flex-direction: row;
+    column-gap: 30px;
+    justify-content: center;
+  }
+
+  .sec2-inactive-btn, .sec2-active-btn {
+    width: 100%;
+    padding: 15px 0;
+    border: 1px solid #bebebe;
+  }
+  
+  .sec2-active-btn {
+    border: none;
+  }
+
+  .sec2-col2-btn {
+    padding: 13px 35px;
+    visibility: visible;
+  }
+
+  .sec2-col2 {
+    width: 94%;
+  }
+
+  .matches {
+    grid-template-columns: repeat(2, 1fr);
+  }
+} 
+/*********** Second Section Responsive End ***********/
+/************************* Section Two End Here *************************/
+
+
+
+/********************* Footer Start Grom Here *********************/
+footer {
+  width: 100%;
+  background-color: #161616;
+  height: auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 100px 0;
+  margin: 0;
+  background-size: cover;
+}
+
+
+.footer-wrapper {
+  width: 85%;
+  height: 300px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  row-gap: 50px;
+} 
+
+.footer-wrapper h1 {
+  font-family: 'Poppins', sans-serif;
+  font-size: 40px;
+  line-height: 60px;
+  font-weight: 600;
+  color: #ffffff;
+  margin: 0;
+}
+
+.footer-wrapper hr {
+  width: 100%;
+  border-color: #535353;
+}
+
+.footer-lists {
+  display: grid;
+  grid-template-columns: repeat(6, 1fr);
+  column-gap: 40px;
+}
+
+.footer-list {
+  font-family: 'Poppins', sans-serif;
+  color: #B9B9B9;
+  text-decoration: none;
+}
+
+/*********** Footer Responsive Start ***********/
+/******* For mobile *******/
+@media only screen and (max-width: 688px) {
+  .footer-wrapper {
+    padding: 50px 0;
+    row-gap: 40px;
+  }
+
+  .footer-lists {
+    grid-template-columns: repeat(1, 1fr);
+    column-gap: 0;
+    row-gap: 25px;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .footer-list {
+    text-align: center;
+  }
+}
+
+/* For Tablet */
+@media only screen and (min-width: 689px) and (max-width:992px) {
+  .footer-lists {
+    grid-template-columns: repeat(6, 1fr);
+    column-gap: 15px;
+    row-gap: 25px;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+  }
+
+  .footer-list {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .footer-lists a {
+    font-size: 13px;
+  }
+}
+/********************* Footer End Here *********************/
+
+
