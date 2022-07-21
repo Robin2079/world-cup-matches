@@ -353,6 +353,7 @@ body {
   border-radius: 5px;
   font-family: 'Poppins', sans-serif;
   transition: all 0.2s ease;
+  color: #161616;
 }
 
 .info-row a:hover {
